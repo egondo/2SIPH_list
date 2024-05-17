@@ -13,6 +13,17 @@ public class RepositorioMensagem {
         carregamentoMensagens(mensagens);
     }
 
+
+    public List<Mensagem> getMensagens() {
+        return mensagens;
+    }
+
+    public void addMensagem(Mensagem msg) {
+        mensagens.add(msg);
+    }
+
+
+
     private void carregamentoMensagens(List<Mensagem> dados) {
         try {
             BufferedReader br = new BufferedReader(new FileReader("D:/dados.csv"));
